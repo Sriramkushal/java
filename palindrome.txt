@@ -1,0 +1,32 @@
+import java.util.*
+class palindrome
+{
+  public void ispalindrome
+  {
+    int i,n;
+    n=s.length();
+    char[]=s.tocharArray();
+    for(i=0;i<n/2;i++)
+      {
+       if(ch[i]!=ch[n-i-1])
+         return false;
+      }
+      return true; 
+  }
+  public static void main(String args[])
+  {
+     Scanner sc=new Scanner(System.in);
+     String s1;
+     int i,n;
+     s1=sc.nextLine();
+     s1=s1.tolower();
+     if(ispalindrome(s1))
+      {
+           System.out.println("Palindrome");
+      }
+      else
+      {
+           System.out.println("Not a palindrome");
+      }
+  }
+}
